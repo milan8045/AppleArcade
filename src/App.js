@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+// Milan Harshil Jay and Jenil 
+import React from "react";
+import { Switch, Route } from "react-router-dom";
+import Navbar from "./Pages/Navbar";
+import Home from "./Pages/Home";
+import IWatch from "./Pages/IWatch";
+import IPhone from "./Pages/IPhone";
+import Airpod from "./Pages/Airpod";
+import Macbook from "./Pages/Macbook";
+import Contact from './Pages/Contact';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/iwatch" component={IWatch} />
+        <Route path="/iphone" component={IPhone} />
+        <Route path="/airpod" component={Airpod} />
+        <Route path="/macbook" component={Macbook} />
+        <Route path="/contact" component={Contact} />
+      </Switch>
     </div>
   );
 }

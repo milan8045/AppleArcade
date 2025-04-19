@@ -1,0 +1,92 @@
+/* Milan Morasiya and Harshil Katrodiya */
+.navbar {
+    background-color: #000000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ffcc00;
+  }
+  
+  img.apple-logo {
+    display: inline;
+    width: 50px;
+
+  }
+
+  .navbar span.logoText {
+    margin-top: 4px;
+    display: inline-block;
+    color: #ffffff;
+  }
+  
+  /* ====== Responsive Nav ====== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+/* Hide nav-links on mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #000;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 180px;
+    padding: 1rem;
+    border-radius: 10px;
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

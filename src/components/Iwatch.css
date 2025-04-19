@@ -1,0 +1,114 @@
+/* Milan Morasiya */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin: 2rem 0 1rem;
+}
+
+/* Banner Section */
+.banner-section {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.banner-image {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  animation: slideIn 1s ease;
+}
+
+/* Product Grid */
+.product-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Product Card */
+.product-details {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-details:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Product Image */
+.iwatch-image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+/* Product Content */
+.product-content {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.product-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: #222;
+}
+
+.specifications {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 1.2rem;
+}
+
+.specifications li {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.4rem;
+}
+
+/* Add to Cart Button */
+.add-to-cart-button {
+  background-color: #0071e3;
+  color: white;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #005bb5;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
